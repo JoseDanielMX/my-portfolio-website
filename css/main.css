@@ -197,24 +197,32 @@ header p.brief {
 
 /***** FOOTER *****/
 
+#contact {
+    background-color: #2D76EB;
+    color: white;
+    padding: 0 0 20px 0;
+}
+
 #contact a {
+    color: white;
     font-weight: bold;
 }
 
 #contact .border { 
     border-image-slice: 5;
-    border-image-source: linear-gradient(to bottom, #E6EDFC 0%, black 50%, #E6EDFC 100%);
+    border-image-source: linear-gradient(to bottom, #2D76EB 0%, white 50%, #2D76EB 100%);
     border-left: 1px solid transparent;
 }
 
 #contact .full-width {
-    border-image-slice: 5;
-    border-image-source: linear-gradient(to right, #E6EDFC 0%, black 50%, #E6EDFC 100%);
-    border-top: 1px solid transparent;
     height: 400px;
     padding: 20px 0;
 }
 
-#contact p {
-    padding: 30px 0;
+#contact h1 {
+    color: #5f98f3;
+}
+
+#contact i {
+    font-size: 32px;
 }
