@@ -11,11 +11,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-h1.cursive {
-    font-family: 'Herr Von Muellerhoff', cursive;
-    font-size: 70px;
-}
-
 h2 {
     font-size: 42px;
 }
@@ -55,12 +50,48 @@ p {
 
 /***** HEADER *****/
 
-header {
-    height: 750px;
+
+header .header-divider {
+    border-image-slice: 5;
+    border-image-source: linear-gradient(to right, #E6EDFC 0%, black 50%, #E6EDFC 100%);
+    border-top: 1px solid transparent;
+    margin: 15px 0 20px 0;
+    width: 100%;
+  }  
+
+.logo {
+    align-items: center;
+    display: flex;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-size: 48px;
+    margin: 0;
 }
 
-header h1.padding {
-    padding: 0 0 15px 25px;
+.menu {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 64px 100px;
+}
+
+.nav {
+    align-items: center;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li a {
+    font-size: 16px;
+    margin-left: 16px;
+    text-transform: uppercase;
+}
+
+.nav li span:hover {
+    border-bottom: 5px dotted black;
+    padding-bottom: 5px;
 }
 
 header h1.big {
@@ -70,26 +101,6 @@ header h1.big {
 header img {
     padding: 70px 0;
     width: 300px;
-}
-
-nav {
-    float: right;
-    padding: 80px 25px;
-}
-
-nav ul li {
-    display: inline-block;
-}
-
-nav ul li a {
-    font-size: 20px;
-    padding-left: 60px;
-    text-transform: uppercase;
-}
-
-nav ul li span:hover {
-    border-bottom: 8px dotted black;
-    padding-bottom: 5px;
 }
 
 header p.brief {
@@ -225,4 +236,46 @@ header p.brief {
 
 #contact i {
     font-size: 32px;
+}
+
+/***** TABLET *****/
+
+@media (min-width: 640px) {
+    
+    /***** HEADER *****/
+
+}
+
+/***** DESKTOP *****/
+
+@media (min-width: 1024px) {
+
+    /***** HEADER *****/
+
+    header .header-divider {
+        display: none;
+    }
+
+    .logo {
+        font-size: 70px;
+    }
+    
+    .nav {
+        flex: 1;
+        justify-content: flex-end;
+    }
+
+    .nav li a {
+        margin-left: 60px;
+    }
+
+    .nav li a {
+        font-size: 20px;
+    }
+    
+    .nav li span:hover {
+        border-bottom: 8px dotted black;
+        padding-bottom: 5px;
+    }
+
 }
