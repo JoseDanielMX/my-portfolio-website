@@ -50,7 +50,6 @@ p {
 
 /***** HEADER *****/
 
-
 header .header-divider {
     border-image-slice: 5;
     border-image-source: linear-gradient(to right, #E6EDFC 0%, black 50%, #E6EDFC 100%);
@@ -72,7 +71,7 @@ header .header-divider {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    padding: 64px 100px;
+    padding: 40px 0 10px;
 }
 
 .nav {
@@ -94,18 +93,38 @@ header .header-divider {
     padding-bottom: 5px;
 }
 
-header h1.big {
-    font-size: 80px;
+/***** HERO AREA *****/
+
+.hero-area {
+    margin: 0;
+    padding: 32px 32px 20px;
 }
 
-header img {
-    padding: 70px 0;
-    width: 300px;
+.hero-area .content-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
-header p.brief {
-    font-size: 40px;
+.hero-area-description {
+    font-size: 20px;
     font-style: italic;
+    margin: 24px 0 0;
+}
+
+.hero-area-heading {
+    font-size: 35px;
+    margin: 0;
+}
+
+.hero-area-info {
+    max-width: 600px;
+    padding: 40px 0 0;
+}
+
+.hero-area-image {
+    width: 100%;
+    max-width: 200px;
 }
 
 /***** ABOUT *****/
@@ -242,8 +261,20 @@ header p.brief {
 
 @media (min-width: 640px) {
     
-    /***** HEADER *****/
+    /***** HERO AREA *****/
 
+    .hero-area .content-wrapper {
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0 0 0 35px;
+    }
+
+    .hero-area-info {
+        max-width: 600px;
+        padding: 40px 0;
+    }
+    
 }
 
 /***** DESKTOP *****/
@@ -260,6 +291,10 @@ header p.brief {
         font-size: 70px;
     }
     
+    .menu {
+        padding: 64px 100px;
+    }
+
     .nav {
         flex: 1;
         justify-content: flex-end;
@@ -278,4 +313,25 @@ header p.brief {
         padding-bottom: 5px;
     }
 
+    /***** HERO AREA *****/
+
+    .hero-area {
+        padding: 0 32px 40px;
+    }
+
+    .hero-area-image {
+        max-width: 300px;
+    }
+
+    .hero-area-description {
+        font-size: 40px;
+    }
+
+    .hero-area-heading {
+        font-size: 80px;
+    }
+
+    .hero-area-info {
+        padding: 40;
+    }
 }
