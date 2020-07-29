@@ -12,7 +12,7 @@ body {
 }
 
 h2 {
-    font-size: 42px;
+    font-size: 28px;
 }
 
 h3 {
@@ -25,6 +25,11 @@ p {
 }
 
 /***** GRID *****/
+
+.content-wrapper {
+    align-items: center;
+    display: flex;
+}
 
 .full-width {
     margin: 0 auto;
@@ -91,17 +96,14 @@ header .header-divider {
 
 .hero-area {
     margin: 0;
-    padding: 32px 32px 20px;
+    padding: 32px 32px 50px;
 }
 
 .hero-area .content-wrapper {
-    align-items: center;
-    display: flex;
     flex-direction: column-reverse;
 }
 
 .hero-area-description {
-    font-size: 20px;
     font-style: italic;
     margin: 24px 0 0;
 }
@@ -125,40 +127,40 @@ header .header-divider {
 
 #about {
     background-color: #2D76EB;
-    height: 665px;
-    left: 0px;
     -ms-transform: skewY(4deg);
-    right: 0px;
+    margin: 0;
+    padding: 2px 32px 38px;
     transform: skewY(4deg);
     -webkit-transform: skewY(4deg);
 }
 
+#about .content-wrapper {
+    color: white;
+    flex-direction: column;
+    -ms-transform: skewY(-4deg);
+    transform: skewY(-4deg);
+    -webkit-transform: skewY(-4deg);
+}
+
 #about h2 {
-    padding-top: 20px;
-}
-
-#about img {
-    padding: 45px 0;
-    width: 315px;
-}
-
-#about li {
-    font-size: 35px;
-}
-
-#about .normal-text {
     color: white;
     -ms-transform: skewY(-4deg);
     transform: skewY(-4deg);
     -webkit-transform: skewY(-4deg);
 }
 
-#about p {
-    font-size: 28px;
+.about-image {
+    max-width: 215px;
+    padding: 10px 0 17px;
+    width: 100%;
 }
 
-#about .vertical-align {
-    padding: 60px 0;
+.about-info {
+    max-width: 600px;    
+}
+
+#about li {
+    font-size: 22px;
 }
 
 /***** PORTFOLIO *****/
@@ -258,22 +260,41 @@ header .header-divider {
     /***** HERO AREA *****/
 
     .hero-area .content-wrapper {
-        align-items: center;
         flex-direction: row;
         justify-content: center;
     }
 
     .hero-area-info {
-        max-width: 600px;
         padding: 40px 30px 40px 0;
     }
+
+    /***** ABOUT *****/
     
+    #about {
+        padding: 10px 32px 50px;
+    }
+
+    #about .content-wrapper {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .about-info {
+        padding: 40px 0 40px 30px;
+    }
+
 }
 
 /***** DESKTOP *****/
 
 @media (min-width: 1024px) {
 
+    /***** BASE STYLE *****/
+   
+    h2 {
+        font-size: 42px;
+    }
+    
     /***** HEADER *****/
 
     header .header-divider {
@@ -309,7 +330,7 @@ header .header-divider {
     /***** HERO AREA *****/
 
     .hero-area {
-        padding: 0 32px 40px;
+        padding: 0 32px 15px;
     }
 
     .hero-area .content-wrapper {
@@ -335,4 +356,35 @@ header .header-divider {
     .hero-area-info {
         padding: 40px;
     }
+
+    /***** ABOUT *****/
+
+    #about {
+        padding: 0 32px 60px;
+    }
+
+    #about .content-wrapper {
+        padding: 0 0 20px;
+    }
+       
+    #about h2 {
+        padding: 0 0 0 40px;
+    }
+
+    #about li {
+        font-size: 35px;
+    }
+
+    #about p {
+        font-size: 28px;
+    }
+
+    .about-info {
+        padding: 40px;
+    }
+    
+    .about-image {
+        max-width: 315px;
+    }
+
 }
