@@ -166,17 +166,16 @@ header .header-divider {
 /***** PORTFOLIO *****/
 
 #portfolio {
-    height: 580px;
-}
-
-#portfolio .full-width {
-    padding-bottom: 30px;
+    height: 950px;
+    margin: 0;
+    padding: 2px 32px 38px;
 }
 
 #portfolio .boxes {
+    align-items: center;
     display: flex;
-    justify-content: space-between;
-    width: 850px;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 #portfolio .box {
@@ -189,13 +188,10 @@ header .header-divider {
     width: 400px;
 }
 
-#portfolio .box, #contact {
-    text-align: center;
-}
-
 #portfolio .box.box-1 {
     background-image: url(../img/rogue-pickings-thumbnail.jpg);
     background-size: cover;
+    margin: 0 0 160px;
 }
 
 #portfolio .box.box-2 {
@@ -212,7 +208,7 @@ header .header-divider {
 #portfolio .container {
     align-items: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin: 0;
     padding: 0;
 }
@@ -221,12 +217,61 @@ header .header-divider {
     padding-top: 230px;
 }
 
+.tab-header {
+    align-items: center;
+    background-color: #E6EDFC;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+}
+  
+.tab-header button {
+    background-color: inherit;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 10px;
+    padding: 14px 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.tab-header button:hover {
+    background-color: whitesmoke;
+}
+
+.tab-header button.active {
+    background-color: white;
+}
+
+.tabcontent {
+    animation: fadeEffect 1s;
+    display: none;
+    margin: 20px;
+    padding: 6px 12px;
+    text-align: center;
+    -webkit-animation: fadeEffect 1s;
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
 /***** FOOTER *****/
 
 #contact {
     background-color: #2D76EB;
     color: white;
     padding: 0 0 20px 0;
+    text-align: center;
 }
 
 #contact a {
@@ -385,6 +430,25 @@ header .header-divider {
     
     .about-image {
         max-width: 315px;
+    }
+
+    /***** PORTFOLIO *****/
+
+    #portfolio {
+        height: 550px;
+        padding: 0 32px 60px;
+    }
+
+    #portfolio .boxes {
+        flex-direction: row;
+    }
+    
+    #portfolio .box.box-1 {
+        margin: 0 50px 0 0;
+    }
+
+    #portfolio h2 {
+        padding: 0 0 0 40px;
     }
 
 }

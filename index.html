@@ -45,20 +45,31 @@
             </div>
         </section>
         <section id="portfolio">
-            <div class="full-width">
-                <h2>Portfolio</h2>
+            <h2>Portfolio</h2>
+            <div class="tab-header">
+                <button class="tablinks" onclick="openTab(event, 'HTML')" id="defaultOpen">HTML & CSS</button>
+                <button class="tablinks" onclick="openTab(event, 'JavaScript')">JavaScript</button>
+                <button class="tablinks" onclick="openTab(event, 'Graphic')">Graphic Design</button>
             </div>
-            <div class="container">
-                <div class="boxes">
-                    <div class="box box-1">
-                        <a href="/rogue-pickings-website/" target="_blank"><h3 class="text">Rogue Pickings Website</h3></a>
-                        <p>HTML & CSS from Photoshop Design Comp.</p>
-                    </div>
-                    <div class="box box-2">
-                        <a href="/jubilee-austen-website/" target="_blank"><h3 class="text">Jubilee Austeen Website</h3></a>
-                        <p>HTML & CSS from Photoshop Design Comp.</p>
+            <div id="HTML" class="tabcontent">
+                <div class="container">
+                    <div class="boxes">
+                        <div class="box box-1">
+                            <a href="/rogue-pickings-website/" target="_blank"><h3 class="text">Rogue Pickings Website</h3></a>
+                            <p>HTML & CSS from Photoshop Design Comp.</p>
+                        </div>
+                        <div class="box box-2">
+                            <a href="/jubilee-austen-website/" target="_blank"><h3 class="text">Jubilee Austeen Website</h3></a>
+                            <p>HTML & CSS from Photoshop Design Comp.</p>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div id="JavaScript" class="tabcontent">
+                <p>Nothing published yet!</p> 
+            </div>
+            <div id="Graphic" class="tabcontent">
+                <p>Nothing published yet!</p>
             </div>
         </section>
     </main>
@@ -83,5 +94,23 @@
         <p>Web Dev and GitHub icons made by <a href="https://www.flaticon.com/authors/freepik" target="_blank" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" target="_blank" title="Flaticon"> www.flaticon.com</a>.<br>
         Avatar made by me.</p>
     </footer>
+    <script>
+        function openTab(evt, skill) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(skill).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
 </body>
 </html>
