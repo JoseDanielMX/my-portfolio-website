@@ -1,5 +1,9 @@
 /***** BASE STYLE *****/
 
+html {
+    font-size: 16px;
+}
+
 a {
     color: black;
     text-decoration: none;
@@ -9,15 +13,16 @@ body {
     background-color: #E6EDFC;
     color: #000;
     font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
 }
 
 h2 {
-    font-size: 28px;
+    font-size: 1.75em;
 }
 
 p {
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
 /***** GRID *****/
@@ -41,7 +46,7 @@ header .header-divider {
     align-items: center;
     display: flex;
     font-family: 'Herr Von Muellerhoff', cursive;
-    font-size: 48px;
+    font-size: 3em;
     margin: 0;
 }
 
@@ -62,7 +67,7 @@ header .header-divider {
 }
 
 .nav li a {
-    font-size: 16px;
+    font-size: 1em;
     margin-left: 16px;
     text-transform: uppercase;
 }
@@ -89,7 +94,7 @@ header .header-divider {
 }
 
 .hero-area-heading {
-    font-size: 35px;
+    font-size: 2.18em;
     margin: 0;
 }
 
@@ -140,7 +145,7 @@ header .header-divider {
 }
 
 #about li {
-    font-size: 22px;
+    font-size: 1.37em;
 }
 
 /***** PORTFOLIO *****/
@@ -183,7 +188,7 @@ header .header-divider {
 
 .project-name {
     align-self: flex-start;
-    font-size: 12px;
+    font-size: 0.75em;
     font-weight: bold;
     margin: 24px 0 0 24px;
     position: absolute;
@@ -233,7 +238,7 @@ header .header-divider {
     border-radius: 30px;
     border: none;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 1.12em;
     margin: 10px;
     padding: 14px 16px;
     outline: none;
@@ -284,13 +289,13 @@ header .header-divider {
 #contact h1 {
     color: #5f98f3;
     font-family: 'Herr Von Muellerhoff', cursive;
-    font-size: 48px;
+    font-size: 3em;
     padding: 50px 0 0;
 }
 
 #contact i {
     color: #5f98f3;
-    font-size: 26px;
+    font-size: 1.62em;
     transition: ease-in-out 0.5s;
 }
 
@@ -364,7 +369,7 @@ footer .social-icons p {
     /***** BASE STYLE *****/
    
     h2 {
-        font-size: 42px;
+        font-size: 2.62em;
         padding: 0 0 0 40px;
     }
     
@@ -375,7 +380,7 @@ footer .social-icons p {
     }
 
     .logo {
-        font-size: 70px;
+        font-size: 4.37em;
     }
     
     .menu {
@@ -392,7 +397,7 @@ footer .social-icons p {
     }
 
     .nav li a {
-        font-size: 20px;
+        font-size: 1.25em;
     }
     
     .nav li span:hover {
@@ -415,11 +420,11 @@ footer .social-icons p {
     }
 
     .hero-area-description {
-        font-size: 40px;
+        font-size: 2.5em;
     }
 
     .hero-area-heading {
-        font-size: 80px;
+        font-size: 5em;
     }
 
     .hero-area-image {
@@ -441,11 +446,11 @@ footer .social-icons p {
     }
      
     #about li {
-        font-size: 35px;
+        font-size: 2.18em;
     }
 
     #about p {
-        font-size: 28px;
+        font-size: 1.75em;
     }
 
     .about-info {
@@ -465,11 +470,11 @@ footer .social-icons p {
     /***** FOOTER *****/
    
     #contact i {
-        font-size: 32px;
+        font-size: 2em;
     }
 
     #contact h1 {
-        font-size: 70px;
+        font-size: 4.37em;
     }
 
     footer h2 {
