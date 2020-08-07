@@ -15,10 +15,6 @@ h2 {
     font-size: 28px;
 }
 
-h3 {
-    font-size: 28px;
-}
-
 p {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
@@ -29,22 +25,6 @@ p {
 .content-wrapper {
     align-items: center;
     display: flex;
-}
-
-.full-width {
-    margin: 0 auto;
-    width: 1200px;
-}
-
-.half-width {
-    float: left;
-    width: 600px;
-}
-
-.third-width {
-    height: 180px;
-    float: left;
-    width: 398px;
 }
 
 /***** HEADER *****/
@@ -186,9 +166,9 @@ header .header-divider {
     top: 0;
     width: 100%;
     object-fit: cover;
-    transition: ease-in-out 1s;
+    transition: ease-in-out 0.5s;
     -webkit-filter: grayscale(100%);
-    -webkit-transition: ease-in-out 1s;
+    -webkit-transition: ease-in-out 0.5s;
 }
 
 .item-img:hover {
@@ -212,6 +192,7 @@ header .header-divider {
 }
 
 .project-name p {
+    border-radius: 10px;
     font-family: "Open Sans", sans-serif;
     margin: 0;
     line-height: 1;
@@ -286,8 +267,8 @@ header .header-divider {
 #contact {
     background-color: #2D76EB;
     color: white;
-    padding: 0 0 20px 0;
     text-align: center;
+    padding: 0 20px 20px;
 }
 
 #contact a {
@@ -295,23 +276,42 @@ header .header-divider {
     font-weight: bold;
 }
 
-#contact .border { 
-    border-image-slice: 5;
-    border-image-source: linear-gradient(to bottom, #2D76EB 0%, white 50%, #2D76EB 100%);
-    border-left: 1px solid transparent;
-}
-
-#contact .full-width {
-    height: 400px;
-    padding: 20px 0;
-}
-
 #contact h1 {
     color: #5f98f3;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-size: 48px;
+    padding: 50px 0 0;
 }
 
 #contact i {
-    font-size: 32px;
+    color: #5f98f3;
+    font-size: 26px;
+    transition: ease-in-out 0.5s;
+}
+
+#contact i:hover {
+    color: #fff;
+}
+
+.copyright {
+    padding: 30px 0 0;
+}
+
+.footer-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer .social-icons {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+footer .social-icons p {
+    margin: 0;
+    padding: 0 10px;
 }
 
 /***** TABLET *****/
@@ -344,6 +344,12 @@ header .header-divider {
         padding: 40px 0 40px 30px;
     }
 
+    /***** FOOTER *****/
+
+    .footer-layout {
+        flex-direction: row;
+    }
+
 }
 
 /***** DESKTOP *****/
@@ -354,6 +360,7 @@ header .header-divider {
    
     h2 {
         font-size: 42px;
+        padding: 0 0 0 40px;
     }
     
     /***** HEADER *****/
@@ -427,11 +434,7 @@ header .header-divider {
     #about .content-wrapper {
         padding: 0 0 20px;
     }
-       
-    #about h2 {
-        padding: 0 0 0 40px;
-    }
-
+     
     #about li {
         font-size: 35px;
     }
@@ -454,8 +457,18 @@ header .header-divider {
         padding: 0 32px 60px;
     }
 
-    #portfolio h2 {
-        padding: 0 0 0 40px;
+    /***** FOOTER *****/
+   
+    #contact i {
+        font-size: 32px;
+    }
+
+    #contact h1 {
+        font-size: 70px;
+    }
+
+    footer h2 {
+        padding: 0;
     }
 
 }
