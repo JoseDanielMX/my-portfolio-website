@@ -43,8 +43,6 @@ header .header-divider {
   }  
 
 .logo {
-    align-items: center;
-    display: flex;
     font-family: 'Herr Von Muellerhoff', cursive;
     font-size: 3em;
     margin: 0;
@@ -68,7 +66,7 @@ header .header-divider {
 
 .nav li a {
     font-size: 1em;
-    margin-left: 16px;
+    margin: 0 8px;
     text-transform: uppercase;
 }
 
@@ -183,7 +181,11 @@ header .header-divider {
 
 #portfolio {
     margin: 0;
-    padding: 0 32px 5px;
+    padding: 0 5px 5px;
+}
+
+#portfolio h2 {
+    padding: 2px 32px 0;
 }
 
 .project-name {
@@ -228,7 +230,7 @@ header .header-divider {
     align-items: center;
     background-color: #E6EDFC;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: center;
     overflow: hidden;
 }
@@ -239,7 +241,7 @@ header .header-divider {
     border: none;
     cursor: pointer;
     font-size: 1.12em;
-    margin: 10px;
+    margin: 10px 5px;
     padding: 14px 16px;
     outline: none;
     transition: 0.3s;
@@ -256,8 +258,8 @@ header .header-divider {
 .tabcontent {
     animation: fadeEffect 1s;
     display: none;
-    margin: 20px;
-    padding: 6px 12px;
+    margin: 20px 0;
+    /* padding: 6px 12px; */
     text-align: center;
     -webkit-animation: fadeEffect 1s;
 }
@@ -354,6 +356,12 @@ footer .social-icons p {
         padding: 40px 0 40px 30px;
     }
 
+    /***** PORTFOLIO *****/
+
+    #portfolio {
+        padding: 0 32px 5px;
+    }
+
     /***** FOOTER *****/
 
     .footer-layout {
@@ -393,13 +401,10 @@ footer .social-icons p {
     }
 
     .nav li a {
-        margin-left: 60px;
+        font-size: 1.25em;
+        margin: 0 30px;
     }
 
-    .nav li a {
-        font-size: 1.25em;
-    }
-    
     .nav li span:hover {
         border-bottom: 8px dotted black;
         padding-bottom: 5px;
