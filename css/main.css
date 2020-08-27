@@ -339,7 +339,7 @@ footer .social-icons p {
 
     .hero-area .content-wrapper {
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
     }
 
     .hero-area-info {
@@ -419,10 +419,6 @@ footer .social-icons p {
 
     .hero-area {
         padding: 0 32px 15px;
-    }
-
-    .hero-area .content-wrapper {
-        justify-content: space-between;
     }
 
     .hero-area-image {
