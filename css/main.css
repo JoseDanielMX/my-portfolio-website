@@ -236,6 +236,11 @@ header .header-divider {
     color: #2b2b2b;
 }
 
+.project-name--blue p {
+    background-color: #3d98ff;
+    color: #fff;
+}
+
 .tab-header {
     align-items: center;
     background-color: #E6EDFC;
